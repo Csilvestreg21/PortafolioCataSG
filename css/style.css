@@ -10079,3 +10079,13 @@ h6,
 .content {
   margin-top: 80px; /* Espacio para evitar superposición */
 }
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  display: none; /* Inicialmente ocultos */
+}
+
+.error-message.active {
+  display: block;
+}
