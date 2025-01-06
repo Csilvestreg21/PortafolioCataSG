@@ -22,6 +22,14 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- Agregar CSS de Bootstrap en el head -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Agregar jQuery y Bootstrap JS antes de cerrar el body -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+
+
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -39,40 +47,17 @@
         <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
             <div class="navbar-nav m-auto py-0">
                 <a href="#home" class="nav-item nav-link active">Inicio</a>
-                <a href="#about" class="nav-item nav-link">Acerca</a>
-                <a href="#qualification" class="nav-item nav-link">Educación</a>
-                <a href="#service" class="nav-item nav-link">Experiencia</a>
+                <a href="#about-container" class="nav-item nav-link">Acerca</a>
+                <a href="#qualification-container" class="nav-item nav-link">Educación</a>
+                <a href="#service-container" class="nav-item nav-link">Experiencia</a>
                 <a href="#skill" class="nav-item nav-link">Habilidades</a>
-                <a href="#portfolio" class="nav-item nav-link">Portafolio</a>
-                <a href="#blog" class="nav-item nav-link">Blog</a>
+                <a href="#portfolio-container" class="nav-item nav-link">Portafolio</a>
                 <a href="#contact" class="nav-item nav-link">Contactame</a>
             </div>
-            <a href="" class="btn btn-outline-primary d-none d-lg-block">Contratame</a>
+            <a href="#contact" class="btn btn-outline-primary d-none d-lg-block">Contratame</a>
         </div>
     </nav>
     <!-- Navbar End -->
-
-
-    <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
-                            allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Video Modal End -->
-
 
     <!-- Header Start -->
     <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
@@ -98,240 +83,13 @@
     </div>
     <!-- Header End -->
     <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Acerca de mí</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/about1.jpg" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <h3 class="mb-4">Especialista en garantía en pruebas de software.</h3>
-                    <p>Ingeniera de Sistemas con más de 10 años de experiencia, especializada en garantizar la calidad y
-                        fiabilidad del software mediante la automatización de pruebas. Experta en pruebas funcionales y
-                        no funcionales, incluyendo backend, colaboro con equipos multidisciplinarios para optimizar el
-                        rendimiento y minimizar errores. Utilizo herramientas como Scrum, Java y Cucumber para
-                        automatizar procesos, asegurando entregas eficientes y de alta calidad. Comprometida con ofrecer
-                        soluciones innovadoras que impulsen el éxito empresarial a través de un desarrollo de software
-                        confiable y de excelencia. </p>
-                    <div class="row mb-3">
-                        <div class="col-sm-6 py-2">
-                            <h6>Nombre: <span class="text-secondary"> Catalina Silvestre Gutiérrez</span></h6>
-                        </div>
-                        <div class="col-sm-6 py-2">
-                            <h6>Grado: <span class="text-secondary">Especialista en Gerencía de proyectos e Ingeniera de
-                                    sistemas</span></h6>
-                        </div>
-                        <div class="col-sm-6 py-2">
-                            <h6>Experiencia: <span class="text-secondary">+10 Años</span></h6>
-                        </div>
-                        <div class="col-sm-6 py-2">
-                            <h6>Celular: <span class="text-secondary">+57 3205186903</span></h6>
-                        </div>
-                        <div class="col-sm-6 py-2">
-                            <h6>Email: <span class="text-secondary">kattha16@gmail.com</span></h6>
-                        </div>
-                        <div class="col-sm-6 py-2">
-                            <h6>Dirección: <span class="text-secondary">Carrera 1#34-80</span></h6>
-                        </div>
-                        <div class="col-sm-6 py-2">
-                            <h6>Freelance: <span class="text-secondary">Disponible</span></h6>
-                        </div>
-                        <div class="col-sm-6 py-2">
-                            <h6>Linkedin: <span class="text-secondary"><a
-                                        href='https://www.linkedin.com/in/catalinasilvestre'></ahref>
-                                        https://www.linkedin.com/in/catalinasilvestre</a></span></h6>
-                        </div>
-                    </div>
-                    <a href="" class="btn btn-outline-primary mr-4">Contactame</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="about-container"></div>
     <!-- About End -->
     <!-- Qualification Start -->
-    <div class="container-fluid py-5" id="qualification">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Educación y Certificaciones</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h3 class="mb-4">Educación</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Diplomado en Proyectos PMI y SCRUM</h5>
-                            <p class="mb-2"><strong>Universidad de Cafam</strong> | <small>2023 - 2024</small></p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Especialización en gerencia de proyectos</h5>
-                            <p class="mb-2"><strong>Fundación universitaria UNINPAHU</strong> | <small>2018 –
-                                    2021</small></p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Ingeniería de sistemas</h5>
-                            <p class="mb-2"><strong>Fundación Universitaria Los Libertadores</strong> | <small>2013
-                                    –2018</small></p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Tecnología en análisis y desarrollo de sistemas de
-                                información</h5>
-                            <p class="mb-2"><strong>Sena</strong> | <small>2011 – 2013</small></p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Tecnología en informática</h5>
-                            <p class="mb-2"><strong>Uniminuto</strong> | <small>2008 – 2011</small></p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Técnico laboral en operador de computadores y programas
-                            </h5>
-                            <p class="mb-2"><strong>Instituto británico</strong> | <small>2007 – 2008</small></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="mb-4">Certificaciones</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Construcción de bases de datos con MYSQL
-                            </h5>
-                            <p class="mb-2"><strong>Sena virtual</strong> | <small>2024</small></p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Scrum Foundation Professional </h5>
-                            <p class="mb-2"><strong>Certifícate SFPC</strong> | <small>2021</small></p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Aplicación del marco de trabajo scrum para proyectos de
-                                desarrollo de software</h5>
-                            <p class="mb-2"><strong>Sena virtual</strong> | <small>2023</small></p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Bases de datos generalidades y sistemas de gestión</h5>
-                            <p class="mb-2"><strong>Sena virtual</strong> | <small>2020</small></p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Diseño de casos de uso</h5>
-                            <p class="mb-2"><strong>Sena virtual</strong> | <small>2020</small></p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute"
-                                style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Calidad en el desarrollo de software</h5>
-                            <p class="mb-2"><strong>Sena virtual</strong> | <small>2020</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="qualification-container"></div>
     <!-- Qualification End -->
     <!-- Services Start -->
-    <div class="container-fluid pt-5" id="service">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Work</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Experiencia</h1>
-            </div>
-            <div class="row">
-                <!-- Su Red -->
-                <div class="col">
-                    <div class="service-card">
-                        <i class="fa fa-2x fa-laptop-code"></i>
-                        <h4>Su Red</h4>
-                        <p>Analista Funcional de Pruebas</p>
-                        <a href="pag/sured.html">Leer más</a>
-                    </div>
-                </div>
-
-                <!-- Ingenian Software -->
-                <div class="col">
-                    <div class="service-card">
-                        <i class="fa fa-2x fa-edit"></i>
-                        <h4>Ingenian Software</h4>
-                        <p>Documentadora - Ingeniera de pruebas</p>
-                        <a href="pag/ingenian.html">Leer más</a>
-                    </div>
-                </div>
-
-                <!-- MO Tecnologías -->
-                <div class="col">
-                    <div class="service-card">
-                        <i class="fa fa-2x fa-search"></i>
-                        <h4>MO Tecnologías</h4>
-                        <p>Qa Engineer - Qa Manager</p>
-                        <a href="pag/MOTec.html">Leer más</a>
-                    </div>
-                </div>
-
-                <!-- Rappi -->
-                <div class="col">
-                    <div class="service-card">
-                        <i class="fab fa-2x fa-android"></i>
-                        <h4>Rappi</h4>
-                        <p>Software Qa Tester</p>
-                        <a href="pag/rappi.html">Leer más</a>
-                    </div>
-                </div>
-
-                <!-- Prodigious Latin America -->
-                <div class="col">
-                    <div class="service-card">
-                        <i class="fab fa-2x fa-apple"></i>
-                        <h4>Prodigious Latin America</h4>
-                        <p>Senior Functional Qa Analyst</p>
-                        <a href="pag/prodigious.html">Leer más</a>
-                    </div>
-                </div>
-
-                <!-- Tata Consultancy Services -->
-                <div class="col">
-                    <div class="service-card">
-                        <i class="fa fa-2x fa-laptop"></i>
-                        <h4>Tata Consultancy Services</h4>
-                        <p>Senior Tester</p>
-                        <a href="pag/tata.html">Leer más</a>
-                    </div>
-                </div>
-
-                <!-- Easy Solutions -->
-                <div class="col">
-                    <div class="service-card">
-                        <i class="fa fa-2x fa-laptop-code"></i>
-                        <h4>Easy Solutions</h4>
-                        <p>Qa Tester</p>
-                        <a href="pag/easy.html">Leer más</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="service-container"></div>
     <!-- Services End -->
     <!-- Skill Start -->
     <div class="container-fluid py-5" id="skill">
@@ -410,136 +168,8 @@
     </div>
     <!-- Skill End -->
     <!-- Portfolio Start -->
-    <div class="container-fluid pt-5 pb-3" id="portfolio">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Mi Portafolio</h1>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center mb-2">
-                    <ul class="list-inline mb-4" id="portfolio-flters">
-                        <li class="btn btn-sm btn-outline-primary m-1 active" data-filter="*">Todos</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Diseño</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Desarrollo</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Pruebas</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Gestion</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="portfolio-container"></div>
     <!-- Portfolio End -->
-    <!-- Blog Start -->
-    <div class="container-fluid py-5" id="blog">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Blog</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Latest Blog</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum
-                    </h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-2.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum
-                    </h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum
-                    </h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Blog End -->
     <!-- Contact Start -->
     <div class="container-fluid py-5" id="contact">
         <div class="container">
@@ -551,37 +181,8 @@
                 <div class="col-lg-8">
                     <div class="contact-form text-center">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="form-row">
-                                <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Nombre completo"
-                                        required="required"
-                                        data-validation-required-message="Por favor ingrese su nombre" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="control-group col-sm-6">
-                                    <input type="email" class="form-control p-4" id="email"
-                                        placeholder="Correo electrónico" required="required"
-                                        data-validation-required-message="Por favor ingrese su correo" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control p-4" id="subject"
-                                    placeholder="Asunto del mensaje" required="required"
-                                    data-validation-required-message="Por favor ingrese su asunto" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Mensaje"
-                                    required="required"
-                                    data-validation-required-message="Por favor ingrese su mensaje"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div>
-                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Enviar
-                                    Mensaje</button>
-                            </div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate" method="POST">
+                            <div id="contact-container"></div>
                         </form>
                     </div>
                 </div>
@@ -590,34 +191,14 @@
     </div>
     <!-- Contact End -->
     <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="container text-center py-5">
-            <div class="d-flex justify-content-center mb-2">
-                <a class="btn btn-light btn-social mr-2" href="https://www.facebook.com/katalinasilvestre?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/catalinasilvestre/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="https://www.instagram.com/kathasgut?igsh=MWhrb2MzaWR2ZHVycg==" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="https://www.tiktok.com/@katalinasilvestre?_t=8sItff0791y&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
-            </div>
-            <div class="d-flex justify-content-center mb-3">
-                <a class="text-white" href="#about">Acerca </a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#qualification">Educación</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#service">Experiencia</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#skill">Habilidades</a>
-            </div>
-            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">2024</a>. Todos los derechos
-                reservados y
-                diseñado por Catalina Silvestre Gutiérrez</p>
-        </div>
-    </div>
+    <div id="footer-container"></div>
     <!-- Footer End -->
     <!-- Scroll to Bottom -->
     <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
     <!-- Back to Top -->
     <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
     <!-- JavaScript Libraries -->
+    <script src="js/components.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/typed/typed.min.js"></script>
@@ -628,8 +209,10 @@
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/modal.js"></script>
 </body>
+
 </html>
