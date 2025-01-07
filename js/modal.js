@@ -1,5 +1,5 @@
-document.querySelectorAll('.open-modal').forEach(function(link) {
-    link.addEventListener('click', function(event) {
+document.querySelectorAll('.open-modal').forEach(function (link) {
+    link.addEventListener('click', function (event) {
         event.preventDefault();  // Prevenir que se siga el enlace
         var url = this.getAttribute('data-url');  // Obtener la URL de la página externa
         var iframe = document.getElementById('modal-frame');  // Obtener el iframe en el modal
