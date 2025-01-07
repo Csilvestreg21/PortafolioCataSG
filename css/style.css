@@ -5152,7 +5152,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   line-height: 0;
   font-size: 0.75rem;
   background-color: #e9ecef;
-  border-radius: 0.25rem;
+  border-radius: 10px;  
 }
 
 .progress-bar {
@@ -9914,7 +9914,7 @@ h6,
 .progress .progress-bar {
   width: 0px;
   border-radius: 10px;
-  transition: 2s;
+  transition: width 2s ease-in-out;
 }
 
 .service-icon {
@@ -10089,3 +10089,6 @@ h6,
 .error-message.active {
   display: block;
 }
+
+
+
