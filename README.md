@@ -1,4 +1,4 @@
-# 🎯 Portafolio Profesional de [Tu Nombre]
+# 🎯 Portafolio Profesional de Catalina Silvestre Gutiérrez
 
 ¡Bienvenido a mi portafolio profesional! Soy un **Analista de Pruebas de Calidad** comprometido con garantizar la excelencia en los productos de software mediante la implementación de estrategias de pruebas funcionales, no funcionales y automatizadas.
 
