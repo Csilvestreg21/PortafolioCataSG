@@ -12,8 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
@@ -23,6 +22,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- Typed.js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link href="css/style.css" rel="stylesheet">
@@ -65,7 +65,8 @@
                     <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">
                         Catalina Silvestre Gutiérrez</h1>
                     <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none">Especialista en garantía de calidad, Metodologías ágiles, Desarrollo
+                    <div id="typed-output"></div>
+                    <div class="typed-text d-none" style="font-size: 45px; color: #ffffff;">Especialista en garantía de calidad, Metodologías ágiles, Desarrollo
                         de productos digitales innovadores</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
                         <a href="../PortafolioCataSG/doc/CatalinaSilvestre_esp_2.pdf" target="_blank"
@@ -189,12 +190,12 @@
     <!-- Footer End -->
     <!-- Scroll to Bottom -->
     <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+    <a href="#" class="back-to-top"> <i class="fa fa-angle-double-up"></i></a>
     <!-- Back to Top -->
     <a href="" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
     <script src="js/components.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/modal.js"></script>
@@ -214,15 +215,12 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
         emailjs.init("EAozJeJosXMPcmSBD");
-
         document.getElementById('contactForm').addEventListener('submit', function (event) {
             event.preventDefault(); // Evitar el envío por defecto
-
             // Validar el formulario antes de enviar
             if (!validateForm()) {
                 return; // Detener el proceso si la validación falla
             }
-
             var submitButton = document.getElementById('submit-button');
             submitButton.disabled = true;
             submitButton.value = 'Enviando...';
@@ -259,7 +257,65 @@
             });
         });
     </script>
+    <script>
+        // Referencia al botón
+        const backToTopBtn = document.querySelector('.back-to-top');
 
+        // Mostrar/ocultar el botón cuando se hace scroll
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // Mostrar después de 300px
+                backToTopBtn.style.display = 'flex';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+
+        // Funcionalidad para volver hacia arriba
+        backToTopBtn.addEventListener('click', (e) => {
+            e.preventDefault(); // Evita el comportamiento predeterminado
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Desplazamiento suave
+            });
+        });
+    </script>
+
+<div id="typed-output"></div>
+<script>
+    const text = [
+        "Especialista en garantía de calidad",
+        "Metodologías ágiles",
+        "Desarrollo de productos digitales innovadores"
+    ];    
+
+    let index = 0;
+    let charIndex = 0;
+    let currentText = '';
+    let isDeleting = false;
+
+    const typedOutput = document.getElementById("typed-output");
+    typedOutput.style.fontSize = "30px";
+    typedOutput.style.color = "#ffffff";
+
+    function typeEffect() {
+        if (!isDeleting && charIndex <= text[index].length) {
+            currentText = text[index].substring(0, charIndex);
+            typedOutput.innerHTML = currentText + "|";
+            charIndex++;
+        } else if (isDeleting && charIndex > 0) {
+            currentText = text[index].substring(0, charIndex - 1);
+            typedOutput.innerHTML = currentText + "|";
+            charIndex--;
+        } else {
+            isDeleting = !isDeleting;
+            if (!isDeleting) {
+                index = (index + 1) % text.length;
+            }
+        }
+        setTimeout(typeEffect, isDeleting ? 50 : 100);
+    }
+
+    typeEffect();
+</script>
 </body>
-
 </html>
