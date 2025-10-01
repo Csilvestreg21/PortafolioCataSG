@@ -47,7 +47,7 @@ PortafolioCataSG/
 Agrega aquí una captura de tu portafolio para que se vea en GitHub:
 
 ```markdown
-![preview](./assets/preview.png)
+![preview](assets/preview.png)
 ```
 ---
 
