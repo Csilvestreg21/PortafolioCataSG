@@ -45,10 +45,8 @@ PortafolioCataSG/
 
 ## 📸 Vista previa
 Agrega aquí una captura de tu portafolio para que se vea en GitHub:
+!![preview](assets/preview.png)
 
-```markdown
-![preview](assets/preview.png)
-```
 ---
 
 ## 🛠️ Cómo usarlo
