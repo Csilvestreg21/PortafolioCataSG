@@ -114,3 +114,30 @@
   .close:hover {
     color: #64ffda;
   }
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0ea5e9; /* azul */
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0.7;
+    z-index: 9999;
+  }
+  
+.scroll-to-top:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }  
+.scroll-to-top {
+  display: none;
+}  

@@ -32,16 +32,18 @@
 </head>
 
 <body>
-    <header class="nav">
+    <header id="top" class="nav">
         <div class="container nav-inner" aria-label="Barra de navegación">
             <a class="brand" href="#">
                 <div class="logo" aria-hidden="true"><span>CS</span></div>
                 <span>Catalina Silvestre</span>
             </a>
             <nav class="nav-links" aria-label="Secciones">
+                <a href="#habilidades">Habilidades</a>
+                <a href="#habilidades">Habilidades</a>
                 <a href="#experiencia">Experiencia</a>
                 <a href="#proyectos">Proyectos</a>
-                <a href="#habilidades">Habilidades</a>
+                <a href="#educacion">Educación</a>
                 <a href="#contacto">Contacto</a>
             </nav>
         </div>
@@ -49,7 +51,7 @@
 
     <main class="container">
         <!-- HERO -->
-        <section class="hero" aria-label="Presentación">
+        <section class="hero" aria-label="Presentación" id="inicio">
             <div>
                 <span class="badge" aria-label="Rol actual">QA • Automatización • API Testing • Analista Funcional</span>
                 <h1 class="title">Hola, soy <span class="grad">Catalina</span> — QA con <strong>10+ años</strong>
@@ -294,7 +296,7 @@
         </section>
 
         <!-- EDUCACIÓN & CERTIFICACIONES -->
-        <section aria-label="Educación y certificaciones">
+        <section aria-label="Educación y certificaciones" id="educacion">
             <h2 class="section-title"><span class="dot"></span>Educación & Certificaciones</h2>
             <div class="grid">
                 <div class="panel">
@@ -359,7 +361,20 @@
         </div>
     </footer>
     <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+    <a href="#inicio" class="scroll-to-top" aria-label="Ir a habilidades">⬆️</a>
+
 </body>
+<script>
+    const scrollBtn = document.querySelector('.scroll-to-top');
+  
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) {
+        scrollBtn.style.display = 'flex';
+      } else {
+        scrollBtn.style.display = 'none';
+      }
+    });
+</script>  
 <script>
     // Obtener elementos
     const modal = document.getElementById("qrModal");
